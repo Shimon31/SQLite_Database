@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchET"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:hint="Enter Search"
+            android:layout_marginBottom="50dp"/>
+
+        <Button
+            android:onClick="searchBTN"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+        </Button>
+
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:layout_margin="10dp"/>
+
+
+    <EditText
+        android:id="@+id/ageET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/insertBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+       android:onClick="showData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Data"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:onClick="updateDataBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update &amp; Delete data"
+        android:layout_marginTop="15dp"/>
+
+
+
+</LinearLayout>
